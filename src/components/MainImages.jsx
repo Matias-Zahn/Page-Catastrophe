@@ -1,18 +1,25 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { ImagesMain, ImagesMain2, ImagesMain3 } from "../constants/constant";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { useRef } from "react";
 
 function MainImages() {
   return (
-    <div className="flex">
+    <div className="md:flex max-w-5xl mx-auto">
       <Swiper
-        className="mySwiper overflow-hidden"
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 5,
-          },
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
         }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper max-w-[330px]"
       >
         {ImagesMain.map((img) => (
           <SwiperSlide key={img} className="">
@@ -21,14 +28,18 @@ function MainImages() {
         ))}
       </Swiper>
       <Swiper
-        className="mySwiper"
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 5,
-          },
-
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
         }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper max-w-[330px]"
       >
         {ImagesMain2.map((img) => (
           <SwiperSlide key={img} className="">
@@ -37,13 +48,18 @@ function MainImages() {
         ))}
       </Swiper>
       <Swiper
-        className="mySwiper"
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 5,
-          },
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
         }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper max-w-[330px]"
       >
         {ImagesMain3.map((img) => (
           <SwiperSlide key={img} className="">

@@ -7,7 +7,7 @@ function NavBar() {
   return (
     <>
       <nav className="bg-black text-white">
-        <div className="flex justify-between items-center px-4">
+        <div className="flex justify-between items-center px-4 max-w-7xl mx-auto">
           <img className="max-w-[70px]  " src="/logo.png" alt="" />
           <div className="hidden md:flex gap-4 text-xs">
             <SectionNav />
