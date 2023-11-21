@@ -33,7 +33,7 @@ function NavBar({ setPages, pages }) {
           isShowModal ? "visible h-64 p-4" : "invisible h-0 overflow-hidden p-0"
         } transition-all duration-150`}
       >
-        <SectionNav setPages={setPages} pages={pages} />
+        <SectionNav setPages={setPages} pages={pages} setIsShowModal={setIsShowModal} />
       </div>
     </nav>
   );

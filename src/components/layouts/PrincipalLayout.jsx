@@ -1,10 +1,10 @@
 function PrincipalLayout({ pages, children }) {
   return (
     <section
-      className={` grid grid-rows-[1fr_auto] h-screen pt-20 ${
+      className={` grid grid-rows-[1fr_auto]  pt-20 ${
         pages === "quienes"
-          ? "visible translate-y-0 h-auto"
-          : "invisible translate-y-full  h-0 overflow-hidden"
+          ? "visible translate-x-0 h-screen"
+          : "invisible translate-x-full  h-0 overflow-hidden"
       } transition-all duration-150`}
     >
       {children}

@@ -1,6 +1,7 @@
 import { IconHome } from "@tabler/icons-react";
 
 function SectionNav({ setPages, pages }) {
+  
   return (
     <>
       <button
