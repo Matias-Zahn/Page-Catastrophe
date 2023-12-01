@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MainImages from "./components/MainImages";
 import NavBar from "./components/NavBar";
-import ABoutUs from "./components/ABoutUs";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   const [pages, setPages] = useState("home");
@@ -11,7 +11,7 @@ function App() {
       <NavBar setPages={setPages} pages={pages} />
 
       <MainImages pages={pages} />
-      <ABoutUs pages={pages} />
+      <AboutUs pages={pages} />
     </main>
   );
 }

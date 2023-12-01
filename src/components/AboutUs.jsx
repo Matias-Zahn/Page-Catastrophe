@@ -1,6 +1,6 @@
 import PrincipalLayout from "./layouts/PrincipalLayout";
 
-function ABoutUs({ pages }) {
+function AboutUs({ pages }) {
   return (
     <PrincipalLayout pages={pages}>
         <article className="max-w-5xl mx-auto shadow-md p-4">
@@ -24,4 +24,4 @@ function ABoutUs({ pages }) {
     </PrincipalLayout>
   );
 }
-export default ABoutUs;
+export default AboutUs;
